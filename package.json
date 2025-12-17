@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "bandcamp-fetch": "^3.0.0"
+  }
+}
