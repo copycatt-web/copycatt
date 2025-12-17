@@ -4,19 +4,55 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> COPYCATT </title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="fonts.googleapis.com" rel="stylesheet">
+	<script src="script.js" defer></script>
+	<script src="https://kit.fontawesome.com/aa2a74dfef.js" crossorigin="anonymous"></script>
+
 </head>
-<body>
-	<h1> Latest release </h1>
-	<div>
-		<p>
-			Make Ya Move - link
-		</p>
+
+<header>
+	<div class="header-container">
+		<h1 onclick="navHome()"> <img class="logo" src="resources/logo.png"> </h1>	
+		<div class="tabs-box">
+			<ul class="tabs">
+				<li data-tab-target='#music' class="active tab">MUSIC</li>
+				<li data-tab-target='#merch' class="tab">MERCH</li>
+				<li data-tab-target='#tutorials' class="tab">TUTORIALS</li>
+				<li data-tab-target='#shows' class="tab">SHOWS</li>
+			</ul>	
+		</div>	
 	</div>
-	<h2> Upcoming shows </h2>
-	<div>
-		<p>
-			
-		</p>
+</header>
+<body>
+	<div class="tab-content">
+		<div id="music" data-tab-content class="active">
+			<h2> Latest Release </h2>
+			<p style="color: white;">Play All Of Them At The Same Time!</p>
+			<div id="bandcamp-grid" style="display: grid; grid-template-columns: repeat(4, 1fr);">
+				<button id="plus">add a guy</button>
+			</div>
+		</div>
+		<div id="merch" data-tab-content>
+			<h2>Merch</h2>
+			<p>Shirts n shit here</p>
+		</div>
+		<div id="tutorials" data-tab-content>
+			<h2>Tutorials</h2>
+			<p>blahblahblah</p>
+		</div>
+		<div id="shows" data-tab-content>
+			<h2>Upcoming shows</h2>
+			<div>
+				<p>
+					AUSTIN, TX
+				</p>		
+			</div>
+		</div>
 	</div>
 </body>
+<footer> you are not gay :) (yet)</footer>
+<style type="text/css"></style>
 </html>

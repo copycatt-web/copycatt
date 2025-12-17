@@ -1,0 +1,108 @@
+:root {
+	--off-white: #eaeaea;
+	--off-black: #2222;
+}
+header{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.logo{
+	max-width: 200px;
+}
+.header-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 10px;
+	background: linear-gradient(#222222, black);
+	margin: 0;
+	width: 100%;
+	height: 50px;
+	flex-grow: 1;
+}
+.tabs-box{
+	display: flex;
+	flex-grow: 0;
+	flex-shrink: 1;
+	justify-content: flex-end;
+}
+
+[data-tab-content] {
+	display: none;
+}
+.active[data-tab-content] {
+	display: block;
+}
+
+.tabs{
+
+	display: flex;
+	justify-content: space-evenly;
+	color: var(--off-white);
+	align-content: flex-end;
+	list-style-type: none;
+	margin-bottom: 5px;
+	padding-right: 10px;
+	font-family: 'Roboto', sans-serif;
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+.tab{
+	padding-left: 20px;
+	padding-right: 20px;
+	transition: padding-left 0.1s ease, padding-right 0.1s ease;
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+.tab:hover{
+	padding-left: 25px;
+	padding-right: 25px;
+	color: white;
+}
+.tab-content{
+	color: var(--off-white);
+	background: var(--off-black);
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+h1{
+	margin: 0;
+	margin-right: 10px;
+	font-size: 40px;
+	font-family: futura;
+	font-style: italic;
+	color: #eaeaea;
+	position: ;
+}
+h2{
+	font-family: Roboto;
+	font-size: 30pt;
+	display: flex;
+	justify-content: center;
+}
+h2:hover{
+	font-size: 35pt;
+}
+.bc-embed{
+	margin: 10px;
+}
+
+body {
+	background: linear-gradient(to top, #222222, black);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	bac
+	margin: 0;
+	padding: 0;
+}
+button {
+	color: darkred;
+}
+p{
+	font-family: sans-serif;
+	color: thistle;
+	text-align: center;
+}
