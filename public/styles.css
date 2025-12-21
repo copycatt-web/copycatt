@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=BBH+Bogle&family=BBH+Hegarty&family=Inconsolata:wght@200..900&family=Noto+Sans+Symbols+2&display=swap');
+
 :root {
 	--off-white: #eaeaea;
 	--off-black: #2222;
@@ -9,6 +11,15 @@ header{
 }
 .logo{
 	max-width: 200px;
+}
+h1{
+	margin: 0;
+	margin-right: 10px;
+	font-size: 40px;
+	font-family: futura;
+	font-style: italic;
+	color: #eaeaea;
+	cursor: default;
 }
 .header-container{
 	display: flex;
@@ -27,16 +38,30 @@ header{
 	flex-shrink: 1;
 	justify-content: flex-end;
 }
-
+.symbols{
+  font-family: "Noto Sans Symbols 2", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 20px; 
+  text-align: center;
+  cursor: pointer;
+  padding-left: 5px;
+  font-size: 10px;
+}
+.playing{
+	padding-left: 10px;
+	font-size: 15px;
+	color: darkred;
+}
 [data-tab-content] {
 	display: none;
 }
+
 .active[data-tab-content] {
 	display: block;
 }
 
 .tabs{
-
 	display: flex;
 	justify-content: space-evenly;
 	color: var(--off-white);
@@ -47,6 +72,7 @@ header{
 	font-family: 'Roboto', sans-serif;
 	flex-grow: 1;
 	flex-shrink: 1;
+	cursor: pointer;
 }
 .tab{
 	padding-left: 20px;
@@ -67,38 +93,68 @@ header{
 	align-items: flex-start;
 	justify-content: center;
 }
-
-h1{
-	margin: 0;
-	margin-right: 10px;
-	font-size: 40px;
-	font-family: futura;
-	font-style: italic;
-	color: #eaeaea;
-	position: ;
-}
 h2{
-	font-family: Roboto;
-	font-size: 30pt;
+	font-family: "BBH Hegarty", sans-serif;
+  	font-weight: 400;
+  	font-size: 20pt;
+  	font-style: normal;
 	display: flex;
 	justify-content: center;
-}
-h2:hover{
-	font-size: 35pt;
+	cursor: default;
+	margin: 10px;
 }
 .bc-embed{
 	margin: 10px;
 }
-
-body {
+table{
+	border-bottom: collapse;
+	width: 100%;
+}
+th, td{
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  user-select: none;
+  font-variation-settings:
+    "wdth" 100;
+}
+tr:not(:last-child){
+	border-bottom: solid 1px white;
+}
+.tableTrackTitle{
+	padding-left: 20px; 
+	text-align: left;
+}
+.linkBox{
+	justify-content: right; 
+	text-align: right; 
+	display: flex;
+}
+.rowSeparator{
+	border-bottom: solid 1px;
+}
+.button2{
+	margin: 2px; 
+	padding: 5px; 
+	border: 0;	
+	cursor: pointer;
+}
+.button2:hover{
+	margin: 1px;
+	border: 1px solid white;	
+}
+body{
 	background: linear-gradient(to top, #222222, black);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	bac
 	margin: 0;
 	padding: 0;
 }
-button {
+html{
+	background-color: #222222;
+}
+button{
 	color: darkred;
 }
 p{
